@@ -21,5 +21,6 @@ const prodConfig = {
     }),
   ],
 };
-
+config.resolve.fallback = { '@mui/material': false, '@mui/icons-material': false };
+config.resolve.fallback = { '@material-ui/core': false, '@material-ui/icons': false };
 module.exports = merge(commonConfig, prodConfig);
